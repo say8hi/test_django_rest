@@ -17,7 +17,7 @@ INSTALLED_APPS = [
     "django.contrib.staticfiles",
     "rest_framework",
     "corsheaders",
-    "api",
+    "test_api",
 ]
 
 MIDDLEWARE = [
@@ -95,3 +95,5 @@ REST_FRAMEWORK = {
 }
 
 TOKEN_LIFETIME = 300
+
+AUTH_USER_MODEL = "test_api.User"
