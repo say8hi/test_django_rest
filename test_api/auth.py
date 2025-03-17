@@ -1,3 +1,4 @@
+from uuid import UUID
 from rest_framework import authentication
 from rest_framework.exceptions import AuthenticationFailed
 from django.conf import settings
@@ -32,6 +33,7 @@ class BearerTokenAuthentication(authentication.BaseAuthentication):
 
     def authenticate_credentials(self, key, request):
         try:
+            key = UUID(key)
             token = Token.objects.select_related("user").get(key=key)
         except (Token.DoesNotExist, ValueError):
             raise AuthenticationFailed("Invalid token.")
