@@ -1,0 +1,39 @@
+{
+	"id": "597b2422-895e-4a2c-be22-c3994af0380f",
+	"name": "Django REST API Environment",
+	"values": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8000/api",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "token",
+			"value": "",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "email_user_id",
+			"value": "test@example.com",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "phone_user_id",
+			"value": "79991234567",
+			"type": "default",
+			"enabled": true
+		},
+		{
+			"key": "password",
+			"value": "secure_password123",
+			"type": "default",
+			"enabled": true
+		}
+	],
+	"_postman_variable_scope": "environment",
+	"_postman_exported_at": "2025-03-17T15:30:09.123Z",
+	"_postman_exported_using": "Postman/11.37.0"
+}
